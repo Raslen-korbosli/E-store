@@ -48,7 +48,7 @@ function ProductSections() {
               alt={category.imgAlt}
               className={`w-full h-full object-cover  ${category.imageStyles}`}
             />
-            <p className="absolute z-40 bottom-4 left-4 text-xl sm:text-2xl xl:text-3xl font-bold text-slate-100 hover:text-slate-200">
+            <p className="absolute z-40 bottom-2 left-2 sm:bottom-4 sm:left-4 text-lg sm:text-2xl xl:text-3xl font-bold text-slate-100 hover:text-slate-200">
               {category.title}
             </p>
           </Link>

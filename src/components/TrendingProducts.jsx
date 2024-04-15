@@ -60,7 +60,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 1,
+    items: 2,
     slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
@@ -77,9 +77,9 @@ function TrendingProducts() {
       <Carousel
         responsive={responsive}
         removeArrowOnDeviceType={['tablet', 'mobile']}
-        swipeable={false}
         autoPlay={true}
         infinite={true}
+        ssr={true}
       >
         {productData.map((product) => (
           <div
