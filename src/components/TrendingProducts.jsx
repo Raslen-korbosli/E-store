@@ -1,57 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from 'react-router-dom';
-const productData = [
-  {
-    productId: '1',
-    productImg: 'img/products/1.jpg',
-    productName: 'Little Armchair Sheepskin',
-    productPrice: '958$',
-  },
-
-  {
-    productId: '2',
-    productImg: 'img/products/2.jpg',
-    productName: 'Lamp Light Blue',
-    productPrice: '25$',
-  },
-  {
-    productId: '3',
-    productImg: 'img/products/3.png',
-    productName: 'Little Armchair Sheepskin',
-    productPrice: '958$',
-  },
-  {
-    productId: '4',
-    productImg: 'img/products/4.jpg',
-    productName: 'Pulp Unit - 5 Compartments',
-    productPrice: '209$',
-  },
-  {
-    productId: '5',
-    productImg: 'img/products/5.jpg',
-    productName: 'Golden Modern Light',
-    productPrice: '175$',
-  },
-  {
-    productId: '6',
-    productImg: 'img/products/6.jpg',
-    productName: 'Body Oil 200ml',
-    productPrice: '32$',
-  },
-  {
-    productId: '7',
-    productImg: 'img/products/7.jpg',
-    productName: 'Black and White Lamp',
-    productPrice: '200$',
-  },
-  {
-    productId: '8',
-    productImg: 'img/products/8.jpg',
-    productName: 'Gejst Shelf A Black Ash/Black',
-    productPrice: '149$',
-  },
-];
+import storeData from '../dataApi';
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -69,7 +19,7 @@ const responsive = {
     slidesToSlide: 1, // optional, default to 1.
   },
 };
-
+const productData = storeData.filter((item, i) => i < 10);
 function TrendingProducts() {
   return (
     <div className="py-40 px-16 lg:px-48   ">

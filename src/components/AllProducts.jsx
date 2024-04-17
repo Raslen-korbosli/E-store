@@ -1,5 +1,8 @@
+import productData from '../dataApi';
+import ProductsUI from './ui/ProductsUI';
+
 function AllProducts() {
-  return <div>hello</div>;
+  return <ProductsUI productData={productData} />;
 }
 
 export default AllProducts;

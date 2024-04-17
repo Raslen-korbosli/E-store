@@ -1,11 +1,12 @@
 import storeData from '../dataApi';
 import ProductsUI from './ui/ProductsUI';
+
 const productData = storeData.filter(
-  (item) => item.itemCategory === 'ELECTRONICS'
+  (item) => item.itemCategory === 'SKINCARE'
 );
 
-function electronicsProducts() {
+function SkinCareProducts() {
   return <ProductsUI productData={productData} />;
 }
 
-export default electronicsProducts;
+export default SkinCareProducts;

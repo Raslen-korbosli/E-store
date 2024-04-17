@@ -35,13 +35,13 @@ const data = [
 ];
 function ProductSections() {
   return (
-    <div className="grid p-4  grid-cols-[repeat(2,minmax(0,20rem))] md:grid-cols-[repeat(4,minmax(0,1fr))] justify-center mx-auto  grid-rows-[repeat(2,minmax(0,14rem))] gap-4 px-8 mx:px-20 lg:px-20 xl:px-48 mt-4  ">
+    <div className="grid  grid-cols-[repeat(2,minmax(0,20rem))] md:grid-cols-[repeat(4,minmax(0,1fr))] justify-center mx-auto  grid-rows-[repeat(2,minmax(0,14rem))] gap-4 px-8 mx:px-20 lg:px-20 xl:px-48 mt-48  ">
       {data.map((category) => (
         <div
           key={category.title}
           className={`relative overflow-hidden shadow-md  ${category.className}`}
         >
-          <Link to={category.navigateTo}>
+          <Link to={category.navigateTo} onClick={() => window.scrollTo(0, 0)}>
             <div className="overlay "></div>
             <img
               src={category.imgUrl}

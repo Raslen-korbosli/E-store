@@ -11,7 +11,7 @@ function AboutStore() {
           RAOUF Products are all made to standard sizes so that you can mix and
           match them freely.
         </p>
-        <Link to="/categories/all">
+        <Link to="/categories/all" onClick={() => window.scrollTo(0, 0)}>
           <button className="font-semibold text-slate-200 text-xl bg-slate-950 px-6 py-3 hover:bg-stone-200 hover:border-stone-950 border-2 hover:text-stone-950 transition-all">
             Shop Now
           </button>

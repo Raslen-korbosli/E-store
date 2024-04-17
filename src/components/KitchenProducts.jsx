@@ -1,5 +1,9 @@
+import storeData from '../dataApi';
+import ProductsUI from './ui/ProductsUI';
+
+const productData = storeData.filter((item) => item.itemCategory === 'KITCHEN');
 function kitchenProducts() {
-  return <div></div>;
+  return <ProductsUI productData={productData} />;
 }
 
 export default kitchenProducts;
