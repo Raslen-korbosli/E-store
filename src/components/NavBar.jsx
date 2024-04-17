@@ -26,16 +26,10 @@ function NavBar() {
               : 'flex gap-6'
           } `}
         >
-          <li
-            onClick={handleClick}
-            className={`${MobileNav ? 'block' : 'hidden sm:block'}`}
-          >
+          <li className={`${MobileNav ? 'block' : 'hidden'}  sm:block`}>
             <Link to="/categories/all">CATEGORIES</Link>
           </li>
-          <li
-            onClick={handleClick}
-            className={`${MobileNav ? 'block' : 'hidden sm:block'}`}
-          >
+          <li className={`${MobileNav ? 'block' : 'hidden'}  sm:block`}>
             PRODUCT PAGE
           </li>
         </ul>

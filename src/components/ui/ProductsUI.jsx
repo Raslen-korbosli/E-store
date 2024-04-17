@@ -6,7 +6,7 @@ function ProductsUI({ productData }) {
       {productData.map((product) => (
         <Link
           key={product.productId}
-          className="flex flex-col justify-center border-2 shadow-sm"
+          className="flex flex-col justify-center border-2 shadow-sm hover:shadow-xl"
           to={`/categories/${product.itemCategory}/${product.productId}`}
         >
           <img src={product.productImg} alt="" className="h-full" />
