@@ -15,7 +15,7 @@ function NavBar() {
       className={`w-full  z-[1000000] bg-white fixed top-0   h-32  flex justify-between items-center lg:px-32 md:px-12 px-8 text-lg font-medium transition-all shadow `}
     >
       <Link to="/home">
-        <img src="img/logo.png" alt="" className=" h-14" />
+        <img src="/img/logo.png" alt="logo" className=" h-14" />
       </Link>
 
       <ul className={`flex gap-6  `}>

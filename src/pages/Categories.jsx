@@ -26,7 +26,7 @@ function Categories() {
           <Link
             key={item}
             to={item.toLowerCase()}
-            onClick={() => window.top(0, 0)}
+            onClick={() => window.scrollTo(0, 0)}
           >
             <li className=" border-2 border-stone-300 px-3 rounded-sm text-md text-stone-600">
               {item}
