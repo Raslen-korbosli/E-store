@@ -29,9 +29,6 @@ function NavBar() {
           <li className={`${MobileNav ? 'block' : 'hidden'}  sm:block`}>
             <Link to="/categories/all">CATEGORIES</Link>
           </li>
-          <li className={`${MobileNav ? 'block' : 'hidden'}  sm:block`}>
-            PRODUCT PAGE
-          </li>
         </ul>
         <li>
           <HiOutlineShoppingCart className="h-auto text-2xl" />

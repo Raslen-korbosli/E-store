@@ -14,7 +14,6 @@ function Footer() {
           <li key={link}>{link}</li>
         ))}
       </ul>
-      <h2>Design By Raslenhnyjn</h2>
     </div>
   );
 }

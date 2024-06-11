@@ -4,10 +4,9 @@ function ProductsUI({ productData }) {
   return (
     <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {productData.map((product) => (
-        <Link
+        <div
           key={product.productId}
-          className="flex flex-col justify-center border-2 shadow-sm hover:shadow-xl"
-          to={`/categories/${product.itemCategory}/${product.productId}`}
+          className="flex flex-col justify-center border-2 shadow-sm hover:shadow-xl cursor-pointer"
         >
           <img src={product.productImg} alt="" className="h-full" />
 
@@ -17,7 +16,7 @@ function ProductsUI({ productData }) {
               {product.productPrice}
             </span>
           </div>
-        </Link>
+        </div>
       ))}
     </div>
   );
