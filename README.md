@@ -1,8 +1,25 @@
-# React + Vite
+<h2 align="center">
+  Raouf E-sotre <br/>
+  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+</h2>
 
-Currently, two official plugins are available:
+<div >
+  <img alt="Dark mode" src="https://github.com/user-attachments/assets/fa132399-048d-4d43-a490-ff10a272c2fc" width="400px" />
+  <img alt="Light mode" src="https://github.com/user-attachments/assets/9061d4c6-d07d-40d8-9a6b-3b3c40bb314b"  width="400px"/>
+ 
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+My e-commerce store project build with react as a step from my learning journey<br/>
+  <a href="https://raslenkorbosli.vercel.app/" target="_blank">Live demo</a><br/>
+This project was built using these technologies.
+
+- React.js
+- tailwind
+- VsCode
+- Vercel
+
+
+**📱 Fully Responsive**
